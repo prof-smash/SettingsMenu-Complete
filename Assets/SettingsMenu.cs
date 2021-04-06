@@ -116,6 +116,7 @@ public class SettingsMenu : MonoBehaviour
         PlayerPrefs.SetInt("AntiAliasingPreference", aaDropdown.value);
         PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
         PlayerPrefs.SetFloat("VolumePreference", currentVolume);
+        PlayerPrefs.Save();
     }
 
     public void LoadSettings(int currentResolutionIndex)
